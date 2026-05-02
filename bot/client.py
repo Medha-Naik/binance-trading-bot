@@ -20,15 +20,17 @@ class BinanceClient:
         
 
     def _sign(self,params:dict)->dict:
+        params["recvWindow"]=60000
         params["timestamp"]=int(time.time()*1000)
+        
         query_string=urlencode(params)
         signature=hmac.new(
             self.api_secret.encode("utf-8"),
             query_string.encode("utf-8"),
             hashlib.sha256
             ).hexdigest()
-
         params["signature"]=signature
+        
 
         return params
         
@@ -43,6 +45,7 @@ class BinanceClient:
             data=response.json()
             if response.status_code!=200:
                 logger.error(f"API error:{data}")
+                raise Exception(f"API error:{data.get('msg','Unknown Error')}")
             else:
                 logger.info(f"Response:{data}")
         
