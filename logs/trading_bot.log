@@ -1,0 +1,41 @@
+Order request | symbol: BTCUSDT | side: BUY | type: MARKET | qty: 0.01 | price: None
+Placing MARKET BUY order | BTCUSDT |qty:0.01
+Unexpected error:'NoneType' object has no attribute 'encode'
+Order request | symbol: BTCUSDT | side: BUY | type: MARKET | qty: 0.01 | price: None
+Placing MARKET BUY order | BTCUSDT |qty:0.01
+POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1777742509043, 'signature': '547cc12590ec153b794ff8155000c7cf5be28e4a769ead9fb3d447c8be454e1c'}
+API error:{'code': -1021, 'msg': 'Timestamp for this request is outside of the recvWindow.'}
+Order success | orderId: None | status:None
+Order request | symbol: BTCUSDT | side: BUY | type: MARKET | qty: 0.01 | price: None
+Placing MARKET BUY order | BTCUSDT |qty:0.01
+POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1777742806846, 'signature': '57a6bb39c39ef130489b9cbcd2843f5b817fdb9f1824020ea57cce694f9b8429', 'recvWindow': 5000}
+API error:{'code': -1021, 'msg': 'Timestamp for this request is outside of the recvWindow.'}
+Unexpected error:API error:Timestamp for this request is outside of the recvWindow.
+Order request | symbol: BTCUSDT | side: BUY | type: MARKET | qty: 0.01 | price: None
+Placing MARKET BUY order | BTCUSDT |qty:0.01
+Unexpected error:local variable 'signature' referenced before assignment
+Order request | symbol: BTCUSDT | side: BUY | type: MARKET | qty: 0.01 | price: None
+Placing MARKET BUY order | BTCUSDT |qty:0.01
+POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'recvWindow': 5000, 'timestamp': 1777742930273, 'signature': '4fb620f0e69b98fa27f92886b720db1dac33327128e9b4e65702b69e461081a3'}
+API error:{'code': -1021, 'msg': 'Timestamp for this request is outside of the recvWindow.'}
+Unexpected error:API error:Timestamp for this request is outside of the recvWindow.
+Order request | symbol: BTCUSDT | side: BUY | type: MARKET | qty: 0.01 | price: None
+Placing MARKET BUY order | BTCUSDT |qty:0.01
+POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'recvWindow': 60000, 'timestamp': 1777742987003, 'signature': '85ffc99898bac3e7f27bca487d8346e57a8f6f2b935bfd10ff30a8496240a58b'}
+Response:{'orderId': 13100396664, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'rcc3eNn143ksZAkGEdx0po', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1777742993174}
+Order success | orderId: None | status:NEW
+Order request | symbol: BTCUSDT | side: SELL | type: LIMIT | qty: 0.01 | price: 80000.0
+Placing LIMIT SELL order | BTCUSDT | qty:0.01 | price: 80000.0
+POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 80000.0, 'timeInForce': 'GTC', 'recvWindow': 60000, 'timestamp': 1777743947857, 'signature': '93b90a574b52fc489da944461e9490f33c0ad6bfc3d8207914283a9f66a8fc42'}
+Response:{'orderId': 13100434312, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'jsXH3HZ03pYtocqAYblDS0', 'price': '80000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1777743953818}
+Order success | orderId: None | status:NEW
+Order request | symbol: BTCUSDT | side: BUY | type: MARKET | qty: 0.01 | price: None
+Placing MARKET BUY order | BTCUSDT |qty:0.01
+POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'recvWindow': 60000, 'timestamp': 1777744051988, 'signature': '15f37292aba9d505351a6d30b2ace94067daea6dca89e084102d60cf389f47d8'}
+Response:{'orderId': 13100438064, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 's9xM1dZT5mI9Q6n6iyUob8', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1777744058090}
+Order success | orderId: 13100438064 | status:NEW
+Order request | symbol: BTCUSDT | side: SELL | type: LIMIT | qty: 0.01 | price: 80000.0
+Placing LIMIT SELL order | BTCUSDT | qty:0.01 | price: 80000.0
+POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 80000.0, 'timeInForce': 'GTC', 'recvWindow': 60000, 'timestamp': 1777744057426, 'signature': 'db6ee5cb675b1e83615aaa8487a6139c69b0ca7466c4354ddc001ad41a571125'}
+Response:{'orderId': 13100438225, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'XUbOuHzwBA7QGe8ZfwrqJj', 'price': '80000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1777744063289}
+Order success | orderId: 13100438225 | status:NEW
