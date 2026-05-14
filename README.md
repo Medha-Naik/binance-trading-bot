@@ -8,20 +8,41 @@ A Python CLI application to place orders on Binance Futures Demo environment (US
 - Input validation
 - Structured logging to file and console
 
+## Project Structure
+
+TRADING_BOT/
+├── bot/
+│   ├── __init__.py
+│   ├── client.py        # BinanceClient class — handles auth, HMAC signing, HTTP requests
+│   ├── logging_config.py # Configures file + console logging
+│   ├── orders.py        # Order placement logic (MARKET and LIMIT)
+│   └── validators.py    # Input validation for CLI arguments
+├── logs/
+│   └── trading_bot.log  # Runtime logs
+├── cli.py               # Entry point — parses CLI arguments
+├── .env.example         # Template for API credentials
+├── requirements.txt
+└── README.md
+
+## Error Handling
+API errors and invalid responses are caught via try/except blocks and logged to both console and `logs/trading_bot.log`. Input validation runs before any API call is made.
+
 ## Setup
 
 1. Clone the repository
+2. ```bash
    git clone https://github.com/Medha-Naik/binance-trading-bot.git
    cd binance-trading-bot
+   ```
 
-2. Create and activate virtual environment
+3. Create and activate virtual environment
    python -m venv venv
    venv\Scripts\activate
 
-3. Install dependencies
+4. Install dependencies
    pip install -r requirements.txt
 
-4. Create a .env file in the root directory
+5. Create a .env file in the root directory
    API_KEY=your_api_key_here
    API_SECRET=your_api_secret_here
    BASE_URL=https://demo-fapi.binance.com
@@ -41,7 +62,7 @@ Limit Order:
 - --quantity Order quantity
 - --price    Price (required for LIMIT orders)
 
-## Assumptions
+## Configurations
 - Uses Binance Futures Demo environment (demo-fapi.binance.com)
 - API keys are stored in a .env file
 - Logs are saved to logs/trading_bot.log
